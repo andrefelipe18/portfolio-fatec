@@ -1,75 +1,17 @@
-# Nuxt 3 Minimal Starter
+# Portfólio Fatec Lins
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Esse repositório tem como objetivo armazenar meu trabalho de graduação do curso de Sistemas para Internet da Faculdade de Tecnologia do Estado de São Paulo (FATEC) - Lins.
 
-## Setup
+## Sobre o projeto
 
-Make sure to install the dependencies:
+O projeto consiste em um portfólio digital, onde o usuário pode visualizar informações sobre mim, meus projetos desenvolvidos durante o curso e habilidades.
 
-```bash
-# npm
-npm install
+## Tecnologias utilizadas
 
-# pnpm
-pnpm install
+- Nuxt 3
+- Tailwind CSS
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Como executar o projeto
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+# Clone o repositório

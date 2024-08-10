@@ -3,7 +3,7 @@
 </script>
 <template>
 	<section id="about-me" class="mx-auto flex flex-col items-center space-y-5 mb-6 sm:mb-0">
-		<div class="mx-auto w-full max-w-[70ch]">
+		<div class="mx-auto w-full max-w-[25%] xs:max-w-[35%] sm:max-w-[70ch]">
 			<div class="flow-root mt-6">
 				<div class="space-y-4">
 					<p class="text-base text-justify">
