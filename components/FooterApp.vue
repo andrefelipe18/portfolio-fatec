@@ -2,14 +2,14 @@
 
 </script>
 <template>
-	<footer class="w-full flex items-center justify-center gap-16 p-10">
+	<!-- <footer class="w-full flex items-center justify-center gap-16 p-10">
 		<aside>
 			<LogoFatec />
 		</aside>
 		<p>
 			<p>Copyright © {{new Date().getFullYear()}} - All right reserved by André Domingues</p>
 		</p>
-		<nav>
+		 <nav>
 			<h6 class="footer-title">Social</h6>
 			<div class="flex gap-2 justify-center w-full">
 				<a>
@@ -20,5 +20,5 @@
 				</a>
 			</div>
 		</nav>
-	</footer>
+	</footer> -->
 </template>
