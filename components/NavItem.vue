@@ -7,7 +7,7 @@ defineProps<{
 </script>
 <template>
 	<li>
-		<NuxtLink :to="to" :class="{ 'text-primary underline': path === to }">
+		<NuxtLink :to="to" :class="{ 'text-primary underline rounded-lg': path === to }">
 			{{ text }}
 		</NuxtLink>
 	</li>

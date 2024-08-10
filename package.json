@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "nuxt": "^3.12.4",
+    "nuxt-swiper": "^1.2.2",
     "vue": "latest"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.1.24",
+    "@iconify-json/devicon-plain": "^1.1.47",
+    "@iconify-json/file-icons": "^1.1.10",
     "@iconify-json/mdi": "^1.1.68",
     "@iconify-json/simple-icons": "^1.1.112",
     "@nuxt/icon": "^1.4.5",

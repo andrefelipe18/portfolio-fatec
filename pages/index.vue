@@ -4,9 +4,9 @@ definePageMeta({
 });
 </script>
 <template>
-  <div class="max-w-1xl flex justify-center">
-    <div class="max-w-2xl mt-5">
-      <div class="artboard artboard-horizontal phone-2">667×375</div>
+  <div class="flex justify-center">
+    <div class="mx-auto max-w-7xl">
+      <AboutImage />
 
       <AboutText />
 

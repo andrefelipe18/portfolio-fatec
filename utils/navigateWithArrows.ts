@@ -10,7 +10,7 @@ export function navigateWithArrows(event: KeyboardEvent, router: Router) {
     }
   } else if (event.key === "ArrowLeft") {
     if (router.currentRoute.value.path === "/") {
-      return;
+      router.push("/contact");
     } else if (router.currentRoute.value.path === "/projects") {
       router.push("/");
     } else if (router.currentRoute.value.path === "/contact") {

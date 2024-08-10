@@ -1,24 +1,34 @@
-<script setup lang="ts">
-
+<script setup>
+const skills = useSkills();
 </script>
 <template>
-	<div class="w-full flex justify-center">
-		<div class="mt-12 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-start items-center">
-			<AboutSkillsItem name="PHP" icon="file-icons:php" size="1.7em" />
-			<AboutSkillsItem name="Laravel" icon="mdi:laravel" size="2em" />
-			<AboutSkillsItem name="Livewire" icon="simple-icons:livewire" size="2em" />
-			
-			<AboutSkillsItem name="Node.js" icon="mdi:nodejs" size="2em" />
-			<AboutSkillsItem name="Vue.js" icon="mdi:vuejs" size="2em" />
-			<AboutSkillsItem name="Nuxt" icon="simple-icons:nuxtdotjs" size="2em" />
-			
-			<AboutSkillsItem name="React" icon="mdi:react" size="2em" />
-			<AboutSkillsItem name="TailwindCSS" icon="mdi:tailwind" size="2em" />
-			<AboutSkillsItem name="Ionic" icon="simple-icons:ionic" size="2em" />
-			
-			<AboutSkillsItem name="Git" icon="bi:git" size="2em" />
-			<AboutSkillsItem name="Docker" icon="mdi:docker" size="2em" />
-			<AboutSkillsItem name="SQL" icon="devicon-plain:postgresql" size="2em" />
-		</div>
-	</div>
+	<Swiper :scrollbar="{ hide: true }" :slidesPerView="4"
+		:navigation="true"
+		:modules="[SwiperScrollbar, SwiperNavigation]" class="max-w-[70ch] my-12" :spaceBetween="100" :loop="true"
+		>
+		<SwiperSlide v-for="skill in skills" :key="skill.name">
+			<AboutSkillsItem :name="skill.name" :icon="skill.icon" :size="skill.size" />
+		</SwiperSlide>
+	</Swiper>
 </template>
+<style>
+.swiper-button-next, .swiper-button-prev {
+	top: 50%;
+}
+
+.swiper-button-next {
+	right: 0;
+}
+
+.swiper-button-prev {
+	left: 0;
+}
+
+.swiper-button-next::before, .swiper-button-prev::before {
+	font-size: 2rem;
+}
+
+.swiper-wrapper {
+  @apply px-16;
+}
+</style>

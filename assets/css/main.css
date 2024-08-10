@@ -2,4 +2,10 @@ html,
 body,
 #__nuxt {
   @apply w-full h-full scroll-smooth;
+  overflow-x: hidden;
+}
+
+:root {
+  --swiper-navigation-color: #cdd3d1;
+  --swiper-pagination-color: #cdd3d1;
 }

@@ -8,7 +8,7 @@ watch(currentRoute, () => {
 });
 </script>
 <template>
-  	<header class="w-full flex justify-center items-center">
+	<header class="mx-auto max-w-7xl">
 		<Navbar :path />
 	</header>
 </template>
