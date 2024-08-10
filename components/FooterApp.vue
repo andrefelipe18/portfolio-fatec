@@ -2,7 +2,7 @@
 
 </script>
 <template>
-	<footer class="w-full flex items-center justify-center gap-8 p-10">
+	<footer class="w-full flex items-center justify-center gap-16 p-10">
 		<aside>
 			<LogoFatec />
 		</aside>
