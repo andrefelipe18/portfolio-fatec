@@ -2,10 +2,10 @@
 const year = new Date().getFullYear();
 </script>
 <template>
-	<footer class="footer footer-center text-base-content p-4">
+	<footer class="p-4 footer footer-center text-base-content">
 		<aside>
 			<LogoFatec />
-			<p class="mt-4 flex gap-2 items-center">
+			<p class="flex items-center gap-2 mt-4">
 				Copyright &copy; {{ year }} - All right reserved by André Domingues
 				<span>
 					<a href=""><Icon :name="'mdi:github'" class="w-6 h-6 mx-2" /></a>

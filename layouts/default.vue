@@ -17,7 +17,7 @@ onUnmounted(() => {
 	<div class="h-screen">
 		<div class="w-full h-full scroll-smooth">
 			<HeaderApp />
-			<main class="w-full sm:h-[78%] flex justify-center items-center">
+			<main class="flex h-[76%] items-center justify-center w-full">
 				<slot />
 			</main>
 			<FooterApp />
