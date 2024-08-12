@@ -36,7 +36,7 @@ export function useSkills() {
       size: "2em",
     },
     {
-      name: "TailwindCSS",
+      name: "Tailwind",
       icon: "mdi:tailwind",
       size: "2em",
     },
