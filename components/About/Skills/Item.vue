@@ -6,8 +6,8 @@ defineProps<{
 }>();
 </script>
 <template>
-	<div class="flex justify-start items-center gap-4">
-		<div class="btn btn-circle btn-primary text-neutral border-primary">
+	<div class="flex items-center justify-start gap-4">
+		<div class="cursor-default btn btn-circle btn-primary text-neutral border-primary">
 			<Icon :name="icon" :size /> 
 		</div>
 		{{ name }}

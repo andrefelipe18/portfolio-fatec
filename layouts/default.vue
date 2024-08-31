@@ -14,7 +14,7 @@ onUnmounted(() => {
 });
 </script>
 <template>
-	<div class="h-screen">
+	<div class="h-full">
 		<div class="w-full h-full scroll-smooth">
 			<HeaderApp />
 			<main class="flex h-[76%] items-center justify-center w-full">
