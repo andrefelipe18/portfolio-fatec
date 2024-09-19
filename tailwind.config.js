@@ -7,8 +7,10 @@ module.exports = {
 
   //Faz um breakpoint abaixo de 530px
   theme: {
-    screens: {
-      xs: "530px",
+    extend: {
+      screens: {
+        xs: "530px",
+      },
     },
   },
 };
