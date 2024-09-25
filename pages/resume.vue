@@ -2,7 +2,7 @@
 	
 </script>
 <template>
-	<section class="w-4/5 max-w-xl sm:w-full">
+	<section class="">
   <ResumeHeader />
   <ResumeText />
   <div class="divider divider-primary"></div>

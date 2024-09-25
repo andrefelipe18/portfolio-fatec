@@ -7,7 +7,7 @@ defineProps<{
 }>();
 </script>
 <template>
-	<a :href="link">
+	<a :href="link" target="_blank" rel="noopener noreferrer">
 		<div class="flex gap-4">
 			<div
 				class="flex items-center p-2 transition-all border border-primary rounded-xl text-neutral-content">
