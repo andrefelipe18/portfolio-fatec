@@ -2,7 +2,7 @@
 const year = new Date().getFullYear();
 </script>
 <template>
-	<footer class="p-4 footer footer-center text-base-content">
+	<footer class="p-4 mt-auto footer footer-center text-base-content">
 		<aside>
 			<LogoFatec />
 			<p class="flex items-center gap-2 mt-4">

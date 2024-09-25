@@ -4,13 +4,11 @@ definePageMeta({
 });
 </script>
 <template>
-  <div class="flex justify-center">
-    <div class="mx-auto max-w-7xl">
+  <div class="flex flex-col justify-center">
       <AboutImage />
 
       <AboutText />
 
       <AboutSkills />
-    </div>
   </div>
 </template>

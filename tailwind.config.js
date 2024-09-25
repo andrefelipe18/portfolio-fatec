@@ -5,10 +5,11 @@ module.exports = {
     themes: ["forest"],
   },
 
-  //Faz um breakpoint abaixo de 530px
   theme: {
-    screens: {
-      xs: "530px",
+    extends: {
+      screens: {
+        xs: "530px",
+      },
     },
   },
 };

@@ -8,7 +8,7 @@ watch(currentRoute, () => {
 });
 </script>
 <template>
-	<header class="mx-auto max-w-7xl">
+	<header class="mx-auto">
 		<Navbar :path />
 	</header>
 </template>
