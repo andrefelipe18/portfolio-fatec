@@ -9,6 +9,6 @@ definePageMeta({
 
       <AboutText />
 
-      <AboutSkills />
+      <AboutSkills /> 
   </div>
 </template>

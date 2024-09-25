@@ -15,26 +15,12 @@ onUnmounted(() => {
 </script>
 <template>
 	<div class="flex flex-col items-center h-screen">
-		<div class="flex flex-col h-full mt-4 md:w-1/2">
+		<div class="flex flex-col h-full mt-4">
 			<HeaderApp />
-			<main class="flex min-h-[76%]">
+			<main class="px-12 my-auto max-w-[34rem]">
 				<slot />
 			</main>
 			<FooterApp />
 		</div>
 	</div>
-	<!-- <template>
-  <div class="flex flex-col items-center h-screen">
-    <div class="flex flex-col h-full mt-4 md:w-1/2">
-      <Navbar />
-      <main class="flex flex-col space-y-10 px-6 font-[Montserrat] py-14">
-        <slot />
-      </main>
-      <div class="mt-auto">
-        <Footer />
-      </div>
-    </div>
-    <SpeedInsights />
-  </div>
-</template> -->
 </template>

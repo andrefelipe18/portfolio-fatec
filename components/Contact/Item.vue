@@ -10,7 +10,7 @@ defineProps<{
 	<a :href="link">
 		<div class="flex gap-4">
 			<div
-				class="flex items-center p-2 transition-all border border-primary rounded-xl hover:bg-neutral-content text-neutral-content hover:text-primary hover:border-neutral-content">
+				class="flex items-center p-2 transition-all border border-primary rounded-xl text-neutral-content">
 				<Icon :name="icon" class="w-8 h-8" />
 			</div>
 			<div class="">
