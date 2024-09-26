@@ -1,20 +1,20 @@
 <script setup lang="ts">
-
+const projects = useProjects();
 </script>
 <template>
   <div class="flex flex-col gap-6 my-auto">
     <h2 class="text-2xl">Projetos:</h2>
-    <div class="p-6 border rounded-lg border-primary">
-      <p class="flex items-center gap-2 text-[1.10rem] font-bold">
-        <span>TITULO DO PROJETO</span>
+    <NuxtLink v-for="(project, index) in projects" :to="`project/${project.id}`" class="p-6 transition-all border rounded-lg cursor-pointer border-primary hover:transform hover:scale-105 group">
+      <p class="flex items-center gap-2 text-[1.10rem] font-bold group group-hover:text-primary transition">
+        <span>{{ project.name }}</span>
       </p>
-      <p class="mt-2 text-sm font-thin">Descrição do projet Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      <p class="mt-2 text-sm font-thin">{{ project.description }}</p>
       <div class="flex justify-between mt-2 text-sm">
-        <p>Semestre</p>
+        <p>{{ project.id }}° semestre </p>
         <div class="">
-          
+
         </div>
       </div>
-    </div>
+    </NuxtLink>
   </div>
 </template>
