@@ -7,7 +7,8 @@ const project = useProjects().find((project) => project.id === Number(route.para
     "Seminário sobre Internet das Coisas, com desenvolvimento de site HTML5 e CSS3.",
   skills: ["HTML5", "CSS3"],
   knowledgeAreas: ["Front-end", "Web Design"],
-};
+  image: "iot.webp",
+};  
 </script>
 <template>
   <div class="">
@@ -35,7 +36,9 @@ const project = useProjects().find((project) => project.id === Number(route.para
         </ol>
       </div>
     </div>
-    
+    <div class="flex max-w-[36rem] mt-12 border border-primary p-2 rounded-lg bg-primary-content">
+      <img :src="`/imgs/projects/${project.image}`" class="w-full rounded-lg " />
+    </div>
   </div>
 </template>
 <style scoped></style>
