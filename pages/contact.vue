@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const socials = useSocial;
+
+definePageMeta({
+  title: 'Contato',
+});
 </script>
 <template>
   <div class="flex flex-col gap-6 my-auto">

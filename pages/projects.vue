@@ -2,6 +2,10 @@
 const {getAll} = useProjects();
 
 const projects = getAll();
+
+definePageMeta({
+  title: 'Projetos',
+});
 </script>
 <template>
   <div class="flex flex-col gap-6 my-auto">
