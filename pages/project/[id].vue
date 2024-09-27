@@ -59,8 +59,8 @@ definePageMeta({
         </ol>
       </div>
     </div>
-    <button @click="openModal" class="flex justify-center w-full p-2 mt-12 border rounded-lg border-primary bg-primary-content">
-      <NuxtImg :src="`/imgs/projects/${project.image}`" class="max-w-[30rem] rounded-lg" />
+    <button @click="openModal" class="flex justify-center max-w-[30rem] p-2 mt-12 border rounded-lg border-primary bg-primary-content">
+      <NuxtImg :src="`/imgs/projects/${project.image}`" class="w-full rounded-lg" />
     </button>
 
     <div v-if="imageModalIsOpen" @keydown.esc.window="closeModal" @click.self="closeModal" class="fixed inset-0 z-30 flex items-center justify-center p-4 bg-black/20 backdrop-blur-md lg:p-8" role="dialog" aria-modal="true" aria-labelledby="imageModalTitle">
