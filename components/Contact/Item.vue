@@ -7,7 +7,7 @@ defineProps<{
 }>();
 </script>
 <template>
-	<a :href="link" target="_blank" rel="noopener noreferrer">
+	<a :href="link" target="_blank" rel="noopener noreferrer" class="transition-all hover:transform hover:scale-105 hover:ml-2">
 		<div class="flex gap-4">
 			<div
 				class="flex items-center p-2 transition-all border border-primary rounded-xl text-neutral-content">
