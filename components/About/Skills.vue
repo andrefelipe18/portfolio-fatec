@@ -1,15 +1,5 @@
 <script setup lang="ts">
-import type { Skill } from '~/types/Skill';
-
 const skills = shuffleArray(useSkills());
-
-function shuffleArray(array: Skill[]) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
 </script>
 <template>
 	<div class="flex flex-wrap justify-center gap-4 my-6">

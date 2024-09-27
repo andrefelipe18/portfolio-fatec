@@ -3,11 +3,31 @@ const route = useRoute();
 
 let project = useProjects().getById(Number(route.params.id));
 
-const loading = ref(true);
+const imageModalIsOpen = ref(false);
 
-setTimeout(() => {
-  loading.value = false;
-}, 1000);
+function openModal() {
+  imageModalIsOpen.value = true;
+}
+
+function closeModal() {
+  imageModalIsOpen.value = false;
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+});
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+});
 </script>
 <template>
   <div class="">
@@ -35,8 +55,19 @@ setTimeout(() => {
         </ol>
       </div>
     </div>
-    <div class="flex max-w-[36rem] mt-12 border border-primary p-2 rounded-lg bg-primary-content">
+    <button @click="openModal" class="flex max-w-[36rem] mt-12 border border-primary p-2 rounded-lg bg-primary-content">
       <NuxtImg :src="`/imgs/projects/${project.image}`" class="w-full rounded-lg" />
+    </button>
+
+    <div v-if="imageModalIsOpen" @keydown.esc.window="closeModal" @click.self="closeModal" class="fixed inset-0 z-30 flex items-center justify-center p-4 bg-black/20 backdrop-blur-md lg:p-8" role="dialog" aria-modal="true" aria-labelledby="imageModalTitle">
+      <div class="relative w-full max-w-2xl">
+        <button type="button" @click="closeModal" class="absolute -top-12 right-0 flex items-center justify-center rounded-full bg-neutral-50 p-1.5 text-neutral-900 hover:opacity-75 active:opacity-100 dark:bg-neutral-900 dark:text-white" aria-label="close modal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="1.4" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+        <img :src="`/imgs/projects/${project.image}`" :alt="`Imagem do Projeto ${project.name}`" class="w-full max-w-2xl rounded-md" />
+      </div>
     </div>
   </div>
 </template>
