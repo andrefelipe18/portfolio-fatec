@@ -1,15 +1,10 @@
 <script setup lang="ts">
 const year = new Date().getFullYear();
-const router = useRouter();
-const { currentRoute } = router;
 </script>
 <template>
 	<footer class="p-4 mt-auto footer footer-center text-base-content">
 		<aside>
-			<div class="flex gap-2">
-				<LogoFatec />
-				<ResumeDownloadButton v-if="currentRoute.path === '/resume'" />
-			</div>
+			<LogoFatec />
 			<p class="flex items-center gap-2 mt-4">
 				Copyright &copy; {{ year }} - All right reserved by André Domingues
 				<span>
