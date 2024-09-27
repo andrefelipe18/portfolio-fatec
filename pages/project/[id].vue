@@ -1,14 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
-const project = useProjects().find((project) => project.id === Number(route.params.id)) || {
-  id: 1,
-  name: "Seminário IoT",
-  description:
-    "Seminário sobre Internet das Coisas, com desenvolvimento de site HTML5 e CSS3.",
-  skills: ["HTML5", "CSS3"],
-  knowledgeAreas: ["Front-end", "Web Design"],
-  image: "iot.webp",
-};  
+
+let project = useProjects().getById(Number(route.params.id));
 </script>
 <template>
   <div class="">
@@ -37,7 +30,7 @@ const project = useProjects().find((project) => project.id === Number(route.para
       </div>
     </div>
     <div class="flex max-w-[36rem] mt-12 border border-primary p-2 rounded-lg bg-primary-content">
-      <img :src="`/imgs/projects/${project.image}`" class="w-full rounded-lg " />
+      <NuxtImg :src="`/imgs/projects/${project.image}`" class="w-full rounded-lg" />
     </div>
   </div>
 </template>

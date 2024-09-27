@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const projects = useProjects();
+const {getAll} = useProjects();
+
+const projects = getAll();
 </script>
 <template>
   <div class="flex flex-col gap-6 my-auto">
