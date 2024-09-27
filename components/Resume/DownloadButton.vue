@@ -1,5 +1,5 @@
 <template>
-  <a href="/docs/resume.pdf" class="btn btn-ghost hover:text-primary">
+  <a href="/docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost hover:text-primary">
     <svg xmlns="http://www.w3.org/2000/svg" class="transition-all cursor-pointer size-6 hover:text-primary"
       viewBox="0 0 24 24">
       <path fill="currentColor"

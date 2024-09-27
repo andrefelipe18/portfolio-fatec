@@ -2,6 +2,12 @@
 const route = useRoute();
 
 let project = useProjects().getById(Number(route.params.id));
+
+const loading = ref(true);
+
+setTimeout(() => {
+  loading.value = false;
+}, 1000);
 </script>
 <template>
   <div class="">
