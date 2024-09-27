@@ -1,7 +1,4 @@
-type Skill = {
-  name: string;
-  svg: string;
-};
+import type { Skill } from "@/types/Skill";
 
 export default function useSkills() {
   return [
