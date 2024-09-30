@@ -4,7 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   app: {
-
+    head: {
+      htmlAttrs: {
+        lang: 'pt-BR',
+      }
+    }
   },
 
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxtjs/google-fonts', "@nuxt/image", "@nuxtjs/seo"],
