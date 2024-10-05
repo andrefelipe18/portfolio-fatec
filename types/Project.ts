@@ -1,7 +1,8 @@
 export type Project = {
   id: number;
   name: string;
-  description: string;
+  shortDescription: string;
+  longDescription: string;
   skills: string[];
   knowledgeAreas: string[];
   image: string;

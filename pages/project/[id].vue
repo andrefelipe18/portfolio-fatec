@@ -39,7 +39,7 @@ definePageMeta({
       Voltar
     </button>
     <h1 class="text-2xl font-bold">{{ project.name }} - {{ project.id }}° Semestre</h1>
-    <p class="mt-2 font-thin">{{ project.description }}</p>
+    <p class="mt-2 font-thin">{{ project.longDescription }}</p>
     <div class="divider divider-primary"></div>
     <div class="flex flex-col gap-4 mt-4">
       <div class="">
