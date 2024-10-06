@@ -5,7 +5,7 @@ Esse repositório tem como objetivo armazenar meu trabalho de graduação do cur
 ## Sobre o projeto
 
 O projeto consiste em um portfólio digital, onde o usuário pode visualizar informações sobre mim, meus projetos desenvolvidos durante o curso e habilidades.
-Link do projeto: [Portfólio Fatec Lins](https://andredomingues-fatec.vercel.app/)
+Link do projeto: [Portfólio Fatec Lins](https://fatec.andredomingues.online/)
 
 ## Tecnologias utilizadas
 
